@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assetes/Css/style.css">
+    <title>Menu Res</title>
+</head>
+<body onresize="menuClose()">
+        <header class="menu">
+            <nav>
+                <div>
+                    <ul>
+                        <div id="logo"><a href="#"><img src="assetes/img/logo.svg" alt=""></a></div>
+                        <li class="sub-menu"><a href="#">Features <img src="assetes/img/icon-arrow-down.svg" alt=""></a>
+                            <ul id="sub-menu-1">
+                                <div>
+                                    <div>
+                                        <img src="assetes/img/icon-todo.svg" alt="">
+                                        <img src="assetes/img/icon-calendar.svg" alt="">
+                                        <img src="assetes/img/icon-reminders.svg" alt="">
+                                        <img src="assetes/img/icon-planning.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <li><a href="#">Todo List</a></li>
+                                        <li><a href="#">Calendar</a></li>
+                                        <li><a href="#">Reminders</a></li>
+                                        <li><a href="#">Planning</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li  class="sub-menu"><a href="#">Company <img src="assetes/img/icon-arrow-down.svg" alt=""></a>
+                            <ul id="sub-menu-2">
+                                <div>
+                                    <li><a href="">History</a></li>
+                                    <li><a href="">Our Team</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About</a></li>
+                    </div>
+                    <div class="login">
+                        <li><a href="#">login</a></li>
+                        <button id="resgister">Register</button>
+                        <button id="but-menu-res" onclick="menu()"><img src="assetes/img/icon-menu.svg" alt=""></button>
+                    </div>
+
+                    <nav id="menu-res">
+                        <div id="but-menu-res-close" ><button onclick="menu()" ><img src="assetes/img/icon-close-menu.svg" alt=""></button></div>
+
+                        <div id="texto-res">
+                            <ul>
+                            <li class="sub" onclick="openSubMenu1()"> Features <img id="img-res-1" src="assetes/img/icon-arrow-down.svg" alt="">
+                                <ul id="lista-sub-1">
+                                    <li><div> <img src="assetes/img/icon-todo.svg" alt=""></div> Todo List</li>
+                                    <li> <div><img src="assetes/img/icon-calendar.svg" alt=""> </div>Calendar</li>
+                                    <li> <div><img src="assetes/img/icon-reminders.svg" alt=""></div> Reminders</li>
+                                    <li><div><img src="assetes/img/icon-planning.svg" alt=""> </div>Planning</li>
+                                </ul>
+                            </li>
+                            <li class="sub" onclick="openSubMenu2()"><a href="#">Company <img id="img-res-2" src="assetes/img/icon-arrow-down.svg" alt=""></a>
+                                <ul id="lista-sub-2"  class="sub-menu-res">
+                                    <li>History</li>
+                                    <li>Our Team</li>
+                                    <li>Blog</li>
+                                </ul>
+                            </li>
+                            <li>Careers</li>
+                            <li>About</li> 
+                            </ul>
+                        </div>
+                        <div id="login-res">
+                            <p>Login</p>
+                            <button>Register</button>
+                        </div>
+                    </nav>  
+                </ul>
+            </nav>
+        </header>
+
+        <main id="conteudo-principal">
+            <div id="textos">
+                <h1><div>Make </div> remote work</h1>
+                <p>Get your team in sync, no matter your locattion. <br>Streamline processes, create team rituals, and <br>watch productivity soar.</p>
+                <button>Learn more</button>
+                <div id="imagens">
+                    <img src="assetes/img/client-databiz.svg" alt="">
+                    <img src="assetes/img/client-audiophile.svg" alt="">
+                    <img src="assetes/img/client-meet.svg" alt="">
+                    <img src="assetes/img/client-maker.svg" alt="">
+                </div>
+            </div>
+
+            <picture>
+                <source media="(max-width:720px)" srcset="assetes/img/image-hero-mobile.png">
+                <img src="assetes/img/image-hero-desktop.png" alt="">
+            </picture>
+            
+            
+        </main>
+
+
+<script src="assetes/Js/script.js"></script>
+</body>
+</html>
